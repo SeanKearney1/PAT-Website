@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>GI PAT Middle School</title>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+
+  <body onload='FillUpcomingEvents("Middle School","");FillSchoolEvents("Middle School","")'>
+
+    <div class="media_links">
+      <p style="position:absolute; top:-35px; right:0px; width:25px; height:90px; background-color:inherit"></p>
+      <p style="position:absolute; top:-35px; left:0%; width:25px; height:25px; background-color:inherit"></p>
+      Follow Us!
+      <a href="https://www.facebook.com/profile.php?id=61555607161146"><img class="link_facebook" src="images/f_logo.svg.webp" alt="Facebook"></a>
+    </div>
+
+    <div class="home_page_header" style="background-image: url('images/middle_school.png'); background-position: bottom 55% right;">
+      <img src="images/logo.svg" alt="Grosse Ile PAT Logo" onclick="LoadPage_main()">
+    </div>
+
+    <div class="home_page_pages">
+      <button class="home_page_main_button" type="button" name="btn_main" onclick="LoadPage_main()" style="border-width: 0px;">Home</button>
+      <button class="home_page_main_button" type="button" name="btn_donate" onclick="LoadPage_donate()">Donate</button>
+      <button class="home_page_main_button" type="button" name="btn_volunteer" onclick="LoadPage_volunteer()">Volunteer</button>
+    </div>
+
+
+
+    <div id="calendar_upcoming">
+
+      <u>Upcoming Events:</u>
+      <ul id="upcoming_events">
+      </ul>
+    </div>
+
+    <div id="school_events">
+    </div>
+
+
+
+
+
+
+      <div class="contacts">
+        <a style="float:right; padding:36px;" href="https://www.facebook.com/profile.php?id=61555607161146">
+          <img src="images/f_logo.svg.webp" alt="Facebook" style="width: 64px;">
+        </a>
+        <p id="contacts_header" style="padding-top: 32px;"><u>Contacts:</u></p>
+        <table style="width:80%;">
+          <th style="width:45%;">
+            <!--<p id="contacts_header"><u>Contacts:</u></p>-->
+            <p id="conacts_info">Grosse Ile PAT P.O. Box 486 Grosse Ile, MI 48138</p> <br>
+            <p id="conacts_info">Email: grosseilepat@gmail.com</p> <br>
+            <p id="conacts_info">PayPal: grosseilepat@gmail.com</p> <br>
+            <p id="conacts_info">Venmo: @GrosseIle-PAT</p> <br>
+          </th>
+          <th style="width:55%; border-width: 0px 0px 0px 0px;">
+            <p id="contacts_mini_header"><u>Co-Presidents:</u></p>
+            <p id="conacts_info">Carrie Batz <span style="float:right;">carriebatz@yahoo.com</span></p>
+            <p id="conacts_info">Lori Ferguson <span style="float:right;">Thefergusons1108@me.com</span></p>
+            <p id="contacts_mini_header"><u>Vice President, Membership:</u></p>
+            <p id="conacts_info">Wendy Kearney <span style="float:right;">wkearney4@gmail.com</span></p>
+            <p id="contacts_mini_header"><u>Secretary:</u></p>
+            <p id="conacts_info">Rita Calcut <span style="float:right;">rcalcut@gmail.com</span></p>
+            <p id="contacts_mini_header"><u>Treasurer:</u></p>
+            <p id="conacts_info">Katie Borg <span style="float:right;">Borg170@comcast.net</span></p>
+
+
+
+            <p id="contacts_mini_header"><u>Administrative Representatives:</u></p>
+            <p id="conacts_info">Audrie Kalisz<span style="float:right;">kalisza@gischools.org</span></p>
+            <p id="conacts_info">Nicole Garza<span style="float:right;">garzan@gischools.org</span></p>
+            <p id="conacts_info">Michele Barringer<span style="float:right;">barrinm@gischools.org</span></p>
+            <p id="conacts_info">Dr. Carter<span style="float:right;">cartera@gischools.org</span></p>
+
+          </th>
+        </table>
+        <br> <br> <br>
+      </div>
+  </body>
+</html>
