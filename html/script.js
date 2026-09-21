@@ -89,8 +89,8 @@ pat_events.push(new PATEvent(
     ["8:30 am and 9:30 am"], // Times
     "Elementary School", // School Type
     "Grosse Ile Elementary School", // Displayed Location
-    "", // Flyer
-    "This is the roar show.", // Description
+    "The Roar Show 2026.jpg", // Flyer
+    "The ROAR Show is the School Respect Assembly Program...Designed for grades K-2 and grades 3-5, The ROAR Show Kindness Assembly Program uses storytelling, audience participation and a bit of magic to engage students with age-appropriate lessons of inclusion, acceptance, kindness, responsibility, respect, safety, bully prevention and accountability for their actions. Elementary schools book The ROAR Show and utilize its lessons and activity worksheets to help remind students of their school-wide learning behavior expectations to allow for a positive school environment.", // Description
     "", // Donate Link
     "" // Volunteer Link
 ));
@@ -131,6 +131,20 @@ pat_events.push(new PATEvent(
     "Grosse Ile High School", // Displayed Location
     "Updated Mumkin Sale 2026.jpg", // Flyer
     "Mumkin pick up.", // Description
+    "", // Donate Link
+    "" // Volunteer Link
+));
+
+// Trunk or Treat
+pat_events.push(new PATEvent(
+    "Event", // Event Type
+    "Trunk or Treat", // Title
+    ["2026-10-21"], // Dates
+    ["5:30-7:30 pm"], // Times
+    "", // School Type
+    "Grosse Ile Airport", // Displayed Location
+    "Trunk or Treat 2026.jpg", // Flyer
+    "Come join us up at the Grosse Ile airport Wednesday, October 21st for our annual Trunk or Treat!", // Description
     "", // Donate Link
     "" // Volunteer Link
 ));
