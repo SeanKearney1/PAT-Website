@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" href="styles.css">
+  <!--<link id="Events" href="Events/Events.txt">-->
+  <head>
+    <meta charset="utf-8">
+    <title>Grosse Ile PAT</title>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+
+  <body onload="FillFeaturedImages();FillSponsors();">
+
+    <div class="media_links">
+      <p style="position:absolute; top:-35px; right:0px; width:25px; height:90px; background-color:inherit;"></p>
+      <p style="position:absolute; top:-35px; left:0%; width:25px; height:inherit; background-color:inherit;"></p>
+      <p style="z-index: 1;">Follow Us!</p>
+      <a href="https://www.facebook.com/profile.php?id=61555607161146"><img class="link_facebook" src="images/f_logo.svg.webp" alt="Facebook"></a>
+    </div>
+
+    <div class="home_page_header">
+      <img src="images/logo.svg" alt="Grosse Ile PAT Logo" onclick="LoadPage_main()">
+    </div>
+    <div class="home_page_pages">
+      <button class="home_page_main_button" type="button" name="btn_parke_lane" onclick="LoadPage_elementary()" style="border-width: 0px;">Elementary School</button>
+      <button class="home_page_main_button" type="button" name="btn_middle" onclick="LoadPage_middle()">Middle School</button>
+      <button class="home_page_main_button" type="button" name="btn_high" onclick="LoadPage_high()">High School</button>
+      <button class="home_page_main_button" type="button" name="btn_new_events" onclick="LoadPage_calendar()">Calendar</button>
+      <button class="home_page_main_button" type="button" name="btn_fundraiser" onclick="LoadPage_fundraiser()">Fundraisers</button>
+      <button class="home_page_main_button" type="button" name="btn_newsletter" onclick="LoadPage_newsletter()">Monthly Newsletter</button>
+      <button class="home_page_main_button" type="button" name="btn_donate" onclick="LoadPage_donate()">Donate</button>
+      <button class="home_page_main_button" type="button" name="btn_volunteer" onclick="LoadPage_volunteer()">Volunteer</button>
+    </div>
+
+      <div class="home_page_section_title" style="margin-top: 80px;"><u>About us</u></div>
+      <p id="main_desc">
+          The Grosse Ile Parent And Teacher (PAT) Booster Club is a membership organization of Elementary,
+          Middle School and High School Parents, Teachers, and Administrators. Our common goal is to raise
+          funds to finance supplemental enrichment programming and other items in all three of our schools
+          which are deemed important by the membership with the advisement of our Principals.
+      </p> <br>
+      <p id="main_desc" style="max-width:40%;">
+        We provide supplementary resources for a wide variety of programs, including:
+      </p> <br> <br>
+      <p id="main_desc" style="max-width:calc(35% + 250px);">
+
+        <span style="float:left">Classroom technology</span><span style="float:right;">Literacy Night</span>  <br> <br>
+        <span style="float:left">Holiday Gift Shop for the elementary schools</span><span style="float:right">Summer Literacy</span> <br> <br>
+        <span style="float:left">Support for specific grade events</span><span style="float:right">Classroom supplies</span> <br> <br>
+        <span style="float:left">Spirit Wear</span><span style="float:right">Guest Author Visits</span> <br> <br>
+        <span style="float:left">Enrichment Activities</span><span style="float:right">Family enrichment nights</span> <br> <br>
+        <span style="float:left">Teacher/Principal requests</span><span style="float:right">Teacher Appreciation</span> <br> <br>
+        <span style="float:left">Walk and Bike to School prizes</span><span style="float:right">Special events funding</span> <br> <br>
+        <span style="float:left">Lending Libraries and Book Vending Machine books</span> <br> <br>
+        <u style="font-size: 48px;">and more!</u>
+      </p>
+
+
+      <div class="featured_images" id="featured_images"></div>
+
+
+
+      <div class="home_page_section_title"><u>Our Mission</u></div>
+      <ul id="mission_statement">
+        <li>
+          To develop between educators of our township and the general united efforts to
+          secure for every child the highest advantages in physical, mental, and social education.
+        </li>
+        <li>
+          The PAT Booster Club is proud to support our kids, our teachers, and our schools in
+          practical and enriching ways.  We provide enrichment programs to supplement your
+          child’s educational experience as well as wish list items which may not be provided
+          for in the district’s annual budget.
+        </li>
+        <li>
+          PAT accomplishes this through the tireless work of many volunteers and
+          committees which make up the Grosse Ile PAT.
+        </li>
+      </ul>
+
+
+      <div class="home_page_section_title"><u>Sponsored By</u></div>
+
+      <div class="sponsors">
+        <div id="sponsors_table" style="margin: 0px auto;">
+
+        </div>
+      </div>
+
+      <div class="home_page_section_title"><u>Board Members</u></div>
+      <br>
+      <p id="board_members" style="max-width:calc(35% + 250px);">
+
+        <span style="float:left">Co-Presidents:</span><span style="float:right;">Carrie Batz and Lori Ferguson</span>  <br> <br> <br>
+        <span style="float:left">Vice President, Membership:</span><span style="float:right;">Wendy Kearney</span>  <br> <br> <br>
+        <span style="float:left">Vice President, Communications:</span><span style="float:right;">Lori Ferguson</span>  <br> <br> <br>
+        <span style="float:left">Secretary:</span><span style="float:right;">Rita Calcut</span>  <br> <br> <br>
+        <span style="float:left">Treasurer:</span><span style="float:right;">Katie Borg</span>  <br> <br> <br>
+        <span style="float:left">Enrichment/Holiday Gift Shop/Spirit Wear:</span><span style="float:right;">Wendy Kearney</span>  <br> <br>
+      </p>
+
+
+
+
+
+
+
+      <div class="contacts">
+        <a style="float:right; padding:36px;" href="https://www.facebook.com/profile.php?id=61555607161146">
+          <img src="images/f_logo.svg.webp" alt="Facebook" style="width: 64px;">
+        </a>
+        <p id="contacts_header" style="padding-top: 32px;"><u>Contacts:</u></p>
+        <table>
+          <th style="width:45%;">
+            <p id="conacts_info">Grosse Ile PAT P.O. Box 486 Grosse Ile, MI 48138</p> <br>
+            <p id="conacts_info">Email: grosseilepat@gmail.com</p> <br>
+            <p id="conacts_info">PayPal: grosseilepat@gmail.com</p> <br>
+            <p id="conacts_info">Venmo: @GrosseIle-PAT</p> <br>
+          </th>
+          <th style="width:55%; border-width: 0px 0px 0px 0px;">
+            <p id="contacts_mini_header"><u>Co-Presidents:</u></p>
+            <p id="conacts_info">Carrie Batz <span style="float:right;">carriebatz@yahoo.com</span></p>
+            <p id="conacts_info">Lori Ferguson <span style="float:right;">Thefergusons1108@me.com</span></p>
+            <p id="contacts_mini_header"><u>Vice President, Membership:</u></p>
+            <p id="conacts_info">Wendy Kearney <span style="float:right;">wkearney4@gmail.com</span></p>
+            <p id="contacts_mini_header"><u>Secretary:</u></p>
+            <p id="conacts_info">Rita Calcut <span style="float:right;">rcalcut@gmail.com</span></p>
+            <p id="contacts_mini_header"><u>Treasurer:</u></p>
+            <p id="conacts_info">Katie Borg <span style="float:right;">Borg170@comcast.net</span></p>
+
+
+
+            <p id="contacts_mini_header"><u>Administrative Representatives:</u></p>
+            <p id="conacts_info">Audrie Kalisz<span style="float:right;">kalisza@gischools.org</span></p>
+            <p id="conacts_info">Nicole Garza<span style="float:right;">garzan@gischools.org</span></p>
+            <p id="conacts_info">Michele Barringer<span style="float:right;">barrinm@gischools.org</span></p>
+            <p id="conacts_info">Dr. Carter<span style="float:right;">cartera@gischools.org</span></p>
+
+          </th>
+        </table>
+        <br> <br> <br>
+      </div>
+
+  </body>
+</html>
