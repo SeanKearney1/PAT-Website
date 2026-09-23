@@ -52,6 +52,9 @@ const featured_images = [
     "featured9.jpg",
     "featured10.jpg"
 ];
+
+
+
 const pat_events = [];
 // Event Types: Fundraiser, Event
 //pat_events.push(new PATEvent(
@@ -148,9 +151,6 @@ pat_events.push(new PATEvent(
     "", // Donate Link
     "" // Volunteer Link
 ));
-
-
-
 
 
 
@@ -433,10 +433,10 @@ function GetEventsHTML(cur_date_events) {
     cur_date_events.forEach(function(pat_evnt) {
       //if (pat_evnt.type == "Event") {
           str += '<div id="day_event_block">';
-          str += '<p style="font-size:36px;padding:16px 64px 0px 64px;"><u><b> '+ pat_evnt.name + '</b></u></p>';
-          if (pat_evnt.flyer != "") { str += '<img style="float:right;max-width:45%;padding:0px 48px;" src="Events/Flyers/' + pat_evnt.flyer + '" alt="Flyer">'; }
-          str += '<p style="font-size:24px;padding:0px 64px;">' + pat_evnt.location + '</p>';
-          str += '<p style="font-size:24px;padding:0px 64px;">';
+          str += '<p style="font-size:calc(18px + 0.9vw);padding:16px calc(16px + 2.4vw) 0px calc(16px + 2.4vw);"><u><b> '+ pat_evnt.name + '</b></u></p>';
+          if (pat_evnt.flyer != "") { str += '<img id="day_flyer" style="float:right;max-width:45%;padding:0px 48px;" src="Events/Flyers/' + pat_evnt.flyer + '" alt="Flyer">'; }
+          str += '<p style="font-size:calc(12px + 0.6vw);padding:0px calc(16px + 2.4vw);">' + pat_evnt.location + '</p>';
+          str += '<p style="font-size:calc(12px + 0.6vw);padding:0px calc(16px + 2.4vw);">';
           for (var i = 0, the_date; the_date = pat_evnt.dates[i]; i++) {
 
             if (i != 0) { date1 = new Date(pat_evnt.dates[i-1]).getDate(); }
@@ -453,13 +453,13 @@ function GetEventsHTML(cur_date_events) {
 
           }
           str += '</p>';
-          str += '<p style="font-size:24px;padding:0px 64px;">';
+          str += '<p style="font-size:calc(12px + 0.6vw);padding:0px calc(16px + 2.4vw);">';
           for (var i = 0, the_date; the_date = pat_evnt.times[i]; i++) { if (i != 0 ) { str += ', '; } str += pat_evnt.times[i]; }
           str += '</p>';
-          str += '<p style="font-size:24px;padding:0px 64px;">' + pat_evnt.desc + '</p>';
+          str += '<p style="font-size:calc(12px + 0.6vw);padding:0px calc(16px + 2.4vw);">' + pat_evnt.desc + '</p>';
 
-          if (pat_evnt.dl != "") { str += '<p><a href="' + pat_evnt.dl + '" style="font-size:24px;padding:0px 64px;">Donate to the Event!</a> </p>'; }
-          if (pat_evnt.vl != "") { str += '<p><a href="' + pat_evnt.vl + '" style="font-size:24px;padding:0px 64px;">Volunteer for the Event!</a> </p>'; }
+          if (pat_evnt.dl != "") { str += '<p><a href="' + pat_evnt.dl + '" style="font-size:calc(12px + 0.6vw);padding:0px calc(16px + 2.4vw);">Donate to the Event!</a> </p>'; }
+          if (pat_evnt.vl != "") { str += '<p><a href="' + pat_evnt.vl + '" style="font-size:calc(12px + 0.6vw);padding:0px calc(16px + 2.4vw);">Volunteer for the Event!</a> </p>'; }
           str += '</div>';
       //}
       counter++;

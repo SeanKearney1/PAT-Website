@@ -35,38 +35,34 @@
       <button class="home_page_main_button" type="button" name="btn_volunteer" onclick="LoadPage_volunteer()">Volunteer</button>
     </div>
 
-    <div id="calendar_upcoming">
+      <div id="calendar_upcoming">
 
-      <u>Upcoming Events:</u>
-      <ul id="upcoming_events">
-      </ul>
-    </div>
-
-
-    <table cellspacing=0 class="event_calendar" id="event_calendar">
-      <tr>
-        <th style="border-width: 0px 0px 3px 3px;">
-          <button type="button" name="btn_back_month" onclick="CalendarBackMonth()">&lt</button>
-        </th>
-        <th id="ec_month_year" colspan="5" style="border-width: 0px 0px 3px 0px;font-size: 64px;padding-top: 4px;padding-bottom: 8px;"></th>
-        <th style="border-width: 0px 3px 3px 0px;">
-          <button type="button" name="btn_up_month" onclick="CalendarUpMonth()">&gt</button>
-        </th>
-      </tr>
-
-      <tr> <th>Sun</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thur</th> <th>Fri</th> <th>Sat</th></tr>
-
-      <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-      <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-      <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-      <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-      <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-      <tr id="final_calendar_row"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
-    </table>
+        <u>Upcoming Events:</u>
+        <ul id="upcoming_events">
+        </ul>
+      </div>
 
 
+      <table cellspacing=0 class="event_calendar" id="event_calendar">
+        <tr>
+          <th style="border-width: 0px 0px 3px 3px;">
+            <button type="button" name="btn_back_month" onclick="CalendarBackMonth()">&lt</button>
+          </th>
+          <th id="ec_month_year" colspan="5" style="border-width: 0px 0px 3px 0px;font-size: calc(32px + 1.6vw);padding-top: 4px;padding-bottom: 8px;"></th>
+          <th style="border-width: 0px 3px 3px 0px;">
+            <button type="button" name="btn_up_month" onclick="CalendarUpMonth()">&gt</button>
+          </th>
+        </tr>
 
+        <tr> <th>Sun</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thur</th> <th>Fri</th> <th>Sat</th></tr>
 
+        <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+        <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+        <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+        <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+        <tr> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+        <tr id="final_calendar_row"> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+      </table>
 
 
 

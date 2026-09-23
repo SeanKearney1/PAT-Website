@@ -236,20 +236,19 @@ body {
 .event_calendar {
   padding-top: 64px;
   margin: 0px auto;
-
 }
 
 .event_calendar tr {
-  min-width: 64px;
-  min-height: 64px;
-  max-height: 96px;
+  //min-width: 64px;
+  //min-height: 64px;
+  //max-height: 96px;
 }
 
 .event_calendar th {
   text-align: center;
   color: white;
   background-color: rgb(196,24,50); /*GI Red*/
-  font-size: 32px;
+  font-size: calc(16px + 0.8vw);
   padding-top: 2px;
   padding-bottom: 4px;
   border-style: solid;
@@ -258,14 +257,13 @@ body {
 }
 
 .event_calendar td {
-  min-width: 96px;
-  min-height: 96px;
-  max-width: 96px;
-  max-height: 96px;
-  height: 96px;
+  min-width: calc(24px + 3.6vw);
+  min-height: calc(24px + 3.6vw);
+  width: calc(24px + 3.6vw);
+  height: calc(24px + 3.6vw);
   background-color: rgb(150,164,176); /*GI Grey LIGHT*/
   color: black;
-  font-size: 14px;
+  font-size: calc(7px + 0.35vw);
   text-align: left;
   vertical-align: text-top;
   border-style: solid;
@@ -276,10 +274,10 @@ body {
 }
 
 .event_calendar button {
-  min-width: 96px;
-  min-height: 96px;
-  height: 96px;
-  font-size: 64px;
+  min-width: calc(24px + 3.6vw);
+  min-height: calc(24px + 3.6vw);
+  height: calc(24px + 3.6vw);
+  font-size: calc(32px + 1.6vw);;
   color: white;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -317,15 +315,15 @@ body {
 
 
 #calendar_upcoming {
+  position: absolute;
+  //float:left;
   max-width: 20%;
   width:20%;
-  position: absolute;
   font-size: 32px;
   margin: 24px;
   padding: 8px;
   font-family: sans-serif;
   background-color: rgb(150,164,176); /*GI Grey LIGHT*/
-
   border-style:double;
   border-width: 16px;
   border-color: rgb(101,110,118); /*GI Grey DARK*/
@@ -336,6 +334,29 @@ body {
   list-style-type: disc !important;
   font-family: sans-serif;
   padding-top: 16px;
+}
+
+@media only screen and (max-width: 1300px) {
+    #calendar_upcoming {
+        position: relative;
+        margin: 24px auto;
+        max-width:80%;
+        width:80%;
+    }
+    #day_flyer {
+        max-width:80%;
+        min-width: 80%;
+        width:80%;
+        margin-top: 24px;
+        padding: 0px;
+    }
+    #why_donate {
+      width: 90%;
+      min-width: 90%;
+    }
+    .qr_code img {
+      max-width:90%;
+    }
 }
 
 
@@ -403,6 +424,5 @@ body {
 
 .qr_code {
   font-size: 48px;
-  
   display: inline-block;
 }
